@@ -6,11 +6,40 @@
 -->
 <html>
 	<head>
-		<title>Escape Velocity by HTML5 UP</title>
+		<title>UP2U Construction & Lawn Care</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<script>
+				$(document).ready(function(){
+				  // Add smooth scrolling to all links
+				  $("a").on('click', function(event) {
+				
+					// Make sure this.hash has a value before overriding default behavior
+					if (this.hash !== "") {
+					  // Prevent default anchor click behavior
+					  event.preventDefault();
+				
+					  // Store hash
+					  var hash = this.hash;
+				
+					  // Using jQuery's animate() method to add smooth page scroll
+					  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+					  $('html, body').animate({
+						scrollTop: $(hash).offset().top
+					  }, 800, function(){
+				   
+						// Add hash (#) to URL when done scrolling (default click behavior)
+						window.location.hash = hash;
+					  });
+					} // End if
+				  });
+				});
+				</script>	
 	</head>
+
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
 
@@ -29,30 +58,30 @@
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
-								<li class="current"><a href="index.html">Home</a></li>
-								<li><a href="left-sidebar.html">About</a></li>
+								<!-- <li class="current"><a href="index.html">Home</a></li> -->
+								<li><a href="#mission">About</a></li>
 								<li>
 									<a href="#">Lawn Care</a>
 									<ul>
-										<li><a href="#">Lorem ipsum</a></li>
-										<li><a href="#">Magna veroeros</a></li>
-										<li><a href="#">Etiam nisl</a></li>
+										<li><a href="#onetime">One Time Service</a></li>
+										<li><a href="#monthly">Monthly Service</a></li>
+										<li><a href="#seed">Aerate & Seed</a></li>
 										<li>
-											<a href="#">Sed consequat</a>
-											<ul>
+											<a href="#landscape">Landscape/Mulch</a>
+											<!-- <ul>
 												<li><a href="#">Lorem dolor</a></li>
 												<li><a href="#">Amet consequat</a></li>
 												<li><a href="#">Magna phasellus</a></li>
 												<li><a href="#">Etiam nisl</a></li>
 												<li><a href="#">Sed feugiat</a></li>
-											</ul>
+											</ul> -->
 										</li>
-										<li><a href="#">Nisl tempus</a></li>
+										<li><a href="#hardscape">Hardscape</a></li>
 									</ul>
 								</li>
-								<li><a href="left-sidebar.html">Construction</a></li>
-								<li><a href="right-sidebar.html">Right Sidebar</a></li>
-								<li><a href="no-sidebar.html">Contact</a></li>
+								<li><a href="#construction">Construction</a></li>
+								<!-- <li><a href="right-sidebar.html">Right Sidebar</a></li> -->
+								<li><a href="#contact">Contact</a></li>
 							</ul>
 						</nav>
 
@@ -65,8 +94,8 @@
 						<p class="style1">So in case you were wondering how we touch your plants ...<br>
 							or mission statement
 						</p>
-						<p class="style2">
-							We could put the mission statement here...
+						<p id="mission" class="style2">
+							Quality People, Quality Service, UP2U Flexibility
 							<!-- Escape Velocity is a free responsive<br class="mobile-hide" /> -->
 							<!-- site template by <a href="http://html5up.net" class="nobr">HTML5 UP</a> -->
 						</p>
@@ -96,44 +125,49 @@
 							<section id="features">
 								<header class="style1">
 									<h2>Our Services</h2>
-									<p>You have to PAY us to touch your plants</p>
+									<p>And Rates</p>
 								</header>
 								<div class="feature-list">
 									<div class="row">
 										<div class="col-6 col-12-medium">
 											<section>
-												<h3 class="icon fa-comment">Lanscaping</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
+												<div>
+												<img src="images/noun_Lawn Mower_5075.png" class="icon"/>
+												<!-- <img src="images/noun_Lawn Mower_5075.png" style="height: 1.25em" class="icon"/> -->
+												<!-- <h3 src="images/noun_Lawn Mower_5075.png" class="icon ">One Time Service</h3> -->
+												<h3 id="onetime" class="icon fa-comment">One Time Service</h3>	
+												</div>						
+												<p>Easy One Time Service may include Mowing, Trimming, Edging, general Grooming & Maintenance, etc.<br>$75.00</p>
 											</section>
 										</div>
 										<div class="col-6 col-12-medium">
 											<section>
-												<h3 class="icon fa-refresh">Residential</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
+												<h3 id="monthly" class="icon fa-refresh">Monthly Service</h3>
+												<p>Monthly Service (4 times per month)<br>$250.00 (up to 1 acre) Estimate Recommended.</p>
 											</section>
 										</div>
 										<div class="col-6 col-12-medium">
 											<section>
-												<h3 class="icon fa-picture-o">The types of things offered</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
+												<h3 id="seed" class="icon fa-picture-o">Aerate & Seed</h3>
+												<p>Aerating and Seeding is recommended during the spring and fall <br>$100.00 Flat rate .</p>
 											</section>
 										</div>
 										<div class="col-6 col-12-medium">
 											<section>
-												<h3 class="icon fa-cog">More things offered</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
+												<h3 id="landscape" class="icon fa-cog">Landscape/Mulch</h3>
+												<p> Contact us to get an estimate.</p>
 											</section>
 										</div>
 										<div class="col-6 col-12-medium">
 											<section>
-												<h3 class="icon fa-wrench">etc.</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
+												<h3 id="hardscape" class="icon fa-wrench">Hardscape</h3>
+												<p>Decks, patios,Fire Pits & Fencing<br>Contact us to get an estimate.</p>
 											</section>
 										</div>
 										<div class="col-6 col-12-medium">
 											<section>
-												<h3 class="icon fa-check">Construction</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
+												<h3 id="construction" class="icon fa-check">Construction/Remodels</h3>
+												<p>Contact us to get an estimate.</p>
 											</section>
 										</div>
 									</div>
@@ -227,7 +261,7 @@
 							<div class="col-6 col-12-medium">
 
 								<!-- Contact -->
-									<section class="feature-list small">
+									<section id="contact" class="feature-list small">
 										<div class="row">
 											<div class="col-6 col-12-small">
 												<section>
@@ -253,7 +287,7 @@
 												<section>
 													<h3 class="icon fa-envelope">Email</h3>
 													<p>
-														<a href="#">info@untitled.tld</a>
+														<a href="#">Btb.up2u@gmail.com</a>
 													</p>
 												</section>
 											</div>
@@ -261,7 +295,7 @@
 												<section>
 													<h3 class="icon fa-phone">Phone</h3>
 													<p>
-														(000) 555-0000
+															980-215-1099
 													</p>
 												</section>
 											</div>

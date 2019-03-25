@@ -1,6 +1,7 @@
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,900");
 
+
 /*
 	Escape Velocity by HTML5 UP
 	html5up.net | @ajlkn
@@ -1881,7 +1882,7 @@ input, select, textarea {
 
 /* Icons */
 
-	.icon {
+	/* .icon {
 		text-decoration: none;
 	}
 
@@ -1899,7 +1900,33 @@ input, select, textarea {
 
 		.icon > .label {
 			display: none;
+		} */
+
+		/* Icons */
+
+	.icon {
+		/* text-decoration: none; */
+		height: 2em;
+		/* size: 1.25em; */
+	}
+
+		.icon:before {
+			/* height: 1.25em; */
+
+			display: inline-block;
+			font-family: FontAwesome;
+			font-size: 1.25em;
+			text-decoration: none;
+			font-style: normal;
+			font-weight: normal;
+			line-height: 1;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
 		}
+
+		/* .icon > .label {
+			display: none;
+		} */
 
 /* Box */
 
